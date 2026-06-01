@@ -1,4 +1,4 @@
-![README Badge for Tests](https://github.com/Widroach/learn-cicd-starter/actions/workflows/.ci.yml/badge.svg)
+![README Badge for Tests](https://github.com/Widroach/learn-cicd-starter/actions/workflows/ci.yml/badge.svg)
 
 # learn-cicd-starter (Notely)
 
