@@ -39,4 +39,8 @@ jobs:
                 version: '>= 363.0.0'
 
             - name: Upload image to AR
-              run: gcloud builds submit --tag us-central1-docker.pkg.dev/notely-502418/notely-ar-repo/notely:latest .
+              run: | 
+                  gcloud builds submit \
+                      --tag us-central1-docker.pkg.dev/notely-502418/notely-ar-repo/notely:latest \
+                      --service-account="projects/notely-502418/serviceAccounts/cloud-run-deployer@notely-502418.iam.gserviceaccount.com" \
+                      --default-buckets-behavior="regional-user-owned-bucket" .
